@@ -44,7 +44,7 @@ function Card(props) {
                 </p>
                 <p className="mt-2">
                     {
-                        `${course.description.substring(0, 100)}...`
+                        `${course.description.substring(0, 100)}....`
                     }
                 </p>
             </div>
