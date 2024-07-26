@@ -30,7 +30,7 @@ function Card(props) {
     return (
         <div className="w-[300px] bg-bgDark rounded-md overflow-hidden text-white bg-opacity-80 hover:scale-105 transition-all duration-300">
             <div className="relative">
-                <img src={course.image.url} />
+                <img src={course.image.url} alt="courseImage"/>
                 <div className=" w-[40px] h-[40px] grid place-items-center bg-white rounded-full absolute right-2 -bottom-4">
                     <button onClick={clickHandler}> {
                         likedCourses.includes(course.id) ? (<FcLike font-size="1.7rem" />) : (<FcLikePlaceholder font-size="1.75rem" />)
@@ -44,7 +44,7 @@ function Card(props) {
                 </p>
                 <p className="mt-2">
                     {
-                        course.description.substring(0, 100) + "..." + "  "
+                        `${course.description.substring(0, 100)}...`
                     }
                 </p>
             </div>
